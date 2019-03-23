@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="e3duardo@gmail.com">
+		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+		<meta name="theme-color" content="#3CC6BF">
+		<title>We Design and Develop</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<style>
+			html,body {
+			  position: relative;
+			  height: 100%;
+			}
+			body{
+				font-size: 14px;
+				font-family: 'Montserrat', sans-serif;
+				background: #ccc;
+			}
+			*,*:before,*:after{
+				box-sizing: border-box;
+			}
+			a{
+				color: inherit;
+				text-decoration: none;
+			}
+			textarea{
+				resize: vertical;
+			}
+			.container{
+				max-width: 960px;
+				margin: 0 auto;
+			}
+			@media (max-width: 768px) {
+				.container{
+   				max-width: 100%;
+   				margin: 0 15px;
+   			}
+			}
+			.botao{
+				background: #2ECBC4;
+				color: #fff;
+				padding: 10px 15px;
+				text-transform: uppercase;
+				font-size: .6rem;
+				transition: all .3s ease;
+				display: inline-block;
+				border: none;
+			}
+			.botao:hover{
+				background: #fff;
+				color: #2ECBC4;
+			}
+			.sr-only{
+				display: none;
+			}
+			.placeholder{
+				display: block;
+			    position: absolute;
+			    color: #757575;
+			    font-size: 14px;
+			    margin: 10px 15px;
+			}
+
+			.form-group{
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 20px;
+			}
+			.form-group-center{
+				justify-content: center;
+			}
+			.form-control{
+				padding: 8px 15px;
+		      border: none;
+		      width: 100%;
+			}
+			.form-control:nth-of-type(2) {
+				margin-left: 20px;
+			}
+
+
+
+
+
+
+			.cabecalho{
+			  position: relative;
+			  min-height: 100%;
+			  background: url('img/header-01.jpg') no-repeat center center;
+			  background-size: cover;
+			}
+			.navegacao{
+				text-transform: uppercase;
+				font-size: 1em;
+				text-align: right;
+				padding: 30px;
+				font-weight: 500;
+			}
+			.nav-link.active{
+				color: #51D0CB;
+			}
+			.navegacao .nav-link + .nav-link{
+				margin-left: 10px;
+			}
+			.texto{
+				position: absolute;
+				top: 50%;
+				left: 60%;
+				transform: translateY(-50%);
+				transition: all .3s ease;
+			}
+			.texto p{
+				color: #787878;
+				margin: 15px 0;
+			}
+			.logo{
+				width: 60px;
+				float: left;
+				margin-top: -10px;
+			}
+			@media (max-width: 768px) {
+				.logo{
+					margin-bottom: 40px;
+				}
+				.navegacao .container{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				.nav-link{
+					margin-bottom: 10px;
+				}
+			  .texto{
+				  position: static;
+				  top: 0;
+				  left: 0;
+				  transform: none;
+			  }
+			}
+
+
+			.contato{
+				min-height: 100%;
+				background: #F4F5F6;
+				padding: 60px 0;
+			}
+			.contato .container{
+				max-width: 600px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+			}
+
+
+
+
+
+			.rodape{
+				background: #000;
+				color: #bcbcbc;
+				padding: 60px 0;
+				overflow: hidden;
+			}
+			.rodape h2{
+				color: white;
+			}
+			.rodape p, .rodape h2{
+				margin-top: 0;
+			}
+			.rodape .container{
+				display: flex;
+				    justify-content: space-between;
+			}
+			.rodape > .container > div:first-of-type{
+				width: 40%;
+			}
+			.rodape-navegacao{
+				display: flex;
+    			flex-direction: column;
+			}
+
+			@media (max-width: 768px) {
+				.rodape > .container > div:first-of-type,
+				.rodape > .container > div:nth-of-type(2){
+					width: 100%;
+				}
+				.rodape .container {
+    				flex-wrap: wrap;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="navegacao">
+				<div class="container">
+					<img src="img/logo.svg" class="logo"/>
+
+					<a href="#home" class="nav-link active">Home</a>
+					<a href="#about" class="nav-link">About</a>
+					<a href="#work" class="nav-link">Work</a>
+					<a href="#process" class="nav-link">Process</a>
+					<a href="#services" class="nav-link">Services</a>
+					<a href="#testimonials" class="nav-link">Testimonials</a>
+					<a href="#contact" class="nav-link">Contact</a>
+				</div>
+			</nav>
+
+			<div class="container">
+				<div class="texto">
+					<h1>We Design and Develop</h1>
+					<p>We are a new design studio based in USA. We have over
+					20 years of combined experience, and know a thing or two
+					about designing websites and mobile apps.</p>
+					<a href="#contato" class="botao">Contact Us</a>
+				</div>
+			</div>
+		</header>
+		 <section class="contato" id="contato">
+			 <div class="container">
+				 <h2 class="titulo">Need a Projet?</h2>
+				 <p>Let us know what you're looking for in an agency. We'll take a look and see
+					 if this could be the start of something beautiful.</p>
+					 <form id="form-contato" action="javascript:void(0);" method="get">
+						 <div class="form-group">
+							 <label class="sr-only" for="name">Your Name</label>
+							 <input class="form-control" id="name" placeholder="Your Name"/>
+
+							 <label class="sr-only" for="email">Your Email</label>
+							 <input class="form-control" id="email" placeholder="Your Email"/>
+						 </div>
+						 <div class="form-group">
+							 <label class="sr-only" for="title">Your Title</label>
+							 <input class="form-control" id="title" placeholder="Your Title"/>
+						 </div>
+						 <div class="form-group">
+							 <label class="placeholder" for="comment">Your Comment</label>
+							 <textarea class="form-control" id="comment" placeholder="Your Title"/>
+						 	 </textarea>
+						 </div>
+						 <div class="form-group form-group-center">
+						 	<button type="submit" class="botao">Send message</button>
+					 	 </div>
+					 </form>
+					 <ul id="resultado">
+					 </ul>
+				</div>
+			</div>
+		 </section>
+		 <footer class="rodape">
+			 <div class="container">
+				 <div data-aos="flip-left">
+				 	<h2>Piroll Design, Inc.</h2>
+					<p>© 2017 Piroll. All rights reserved.<br/>
+					Designed by robirurk.</p>
+				 </div>
+				 <div data-aos="fade-left">
+					<p><a href="mailto:hello@pirolltheme.com">hello@pirolltheme.com</a></p>
+					<p><a href="tel:+44987065908">+44 987 065 908 </a></p>
+				</div>
+				<nav class="rodape-navegacao" data-aos="fade-left">
+					<a href="#">Projects</a>
+					<a href="#">About</a>
+					<a href="#">Services</a>
+					<a href="#">Carreer</a>
+				</nav>
+				<nav class="rodape-navegacao" data-aos="fade-left">
+					<a href="#">News</a>
+					<a href="#">Events</a>
+					<a href="#">Contact</a>
+					<a href="#">Legals</a>
+				</nav>
+				<nav class="rodape-navegacao" data-aos="fade-left">
+					<a href="#">Facebook</a>
+					<a href="#">Twitter</a>
+					<a href="#">Instagram</a>
+					<a href="#">Dribbble</a>
+				</nav>
+			</div>
+		 </footer>
+		 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		  <script>
+		    AOS.init();
+
+
+			 var form = document.querySelector('#form-contato');
+			 var resultado = document.querySelector('#resultado');
+
+			 form.addEventListener("submit", function(){
+				var name = document.querySelector('#name').value;
+				var email = document.querySelector('#email').value;
+				var title = document.querySelector('#title').value;
+				var comment = document.querySelector('#comment').value;
+
+				var retorno =
+				'<li></li>'+
+				'<li>Cadastro</li>'+
+				'<li>Nome: '+name+'</li>'+
+				'<li>Email: '+email+'</li>'+
+				'<li>Titulo: '+title+'</li>'+
+				'<li>Comentario: '+comment+'</li>';
+
+				 resultado.innerHTML += retorno;
+			 });
+		  </script>
+	</body>
+</html>
