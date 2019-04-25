@@ -4,7 +4,7 @@ HTML e CSS são a base de toda aplicação web, vamos aprender de forma prática
 
 Esse é código resultante do bootcamp intitulado 'Introdução ao desenvolvimento Web' por [Eduardo Santos](https://github.com/e3duardo) ministrado no dia 21 de março de 2019. Acesse nosso [site](https://codered.online/eventos/introwebdev) para saber mais sobre o evento.
 
-Lista de links úteis por Eduardo Santos:
+Links úteis por Eduardo Santos:
 
  - [Seletores de css](https://www.w3schools.com/cssref/css_selectors.asp)
  - [Ótimo site para aprender mais css](https://css-tricks.com/centering-css-complete-guide/)
